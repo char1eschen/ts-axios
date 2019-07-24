@@ -33,7 +33,7 @@ export function deepMerge(...objs: any[]): any {
             result[key] = deepMerge({}, val)
           }
         } else {
-          return ([key] = val)
+          result[key] = val
         }
       })
     }
