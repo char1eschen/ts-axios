@@ -22,7 +22,7 @@ cd("docs")
 touch(".nojekyll")
 exec("git init")
 exec("git add .")
-exec('git config user.name "charles"')
+exec('git config user.name "Charles Chen"')
 exec('git config user.email "martian2005@gmail.com"')
 exec('git commit -m "docs(docs): update gh-pages"')
 exec(
