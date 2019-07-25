@@ -64,9 +64,9 @@ export function buildURL(
       url = url.slice(0, markIndex)
     }
     url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams
-
-    return url
   }
+
+  return url
 }
 
 export function isAbsoluteURL(url: string): boolean {

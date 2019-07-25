@@ -85,15 +85,15 @@ export default class Axios {
     return this._requestMethodWithoutData('options', url, config)
   }
 
-  post(url: string, data?: any, config: AxiosRequestConfig): AxiosPromise {
+  post(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise {
     return this._requestMethodWithData('post', url, data, config)
   }
 
-  put(url: string, data?: any, config: AxiosRequestConfig): AxiosPromise {
+  put(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise {
     return this._requestMethodWithData('put', url, data, config)
   }
 
-  patch(url: string, data?: any, config: AxiosRequestConfig): AxiosPromise {
+  patch(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise {
     return this._requestMethodWithData('patch', url, data, config)
   }
 
