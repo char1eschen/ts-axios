@@ -517,8 +517,6 @@ axios.get('/user/12345', {
 
 You can cancel a request using a *cancel token*.
 
-> The ts-axios cancel token API is based on the withdrawn [cancelable promises proposal](https://github.com/tc39/proposal-cancelable-promises).
-
 You can create a cancel token using the `CancelToken.source` factory as shown below:
 
 ```js
