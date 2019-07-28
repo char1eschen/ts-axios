@@ -1,8 +1,12 @@
 {
   "name": "vue-cli-plugin-ts-axios",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Promise based HTTP client for the browser",
-  "keywords": ["axios", "ts-axios", "typescript"],
+  "keywords": [
+    "axios",
+    "ts-axios",
+    "typescript"
+  ],
   "main": "dist/ts-axios.umd.js",
   "module": "dist/ts-axios.es5.js",
   "typings": "dist/types/ts-axios.d.ts",
