@@ -17,7 +17,7 @@ Promise based HTTP client for the browser
 Using npm:
 
 ```bash
-$ npm install vue-cli-plugin-ts-axios
+$ npm i vue-ts-axios
 ```
 
 ## Example
@@ -25,7 +25,7 @@ $ npm install vue-cli-plugin-ts-axios
 Performing a `GET` request
 
 ```js
-const axios = require('vue-cli-plugin-ts-axios');
+const axios = require('vue-ts-axios');
 
 // Make a request for a user with a given ID
 axios.get('/user?ID=12345')
