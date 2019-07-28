@@ -61,14 +61,14 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
         if (request.status === 0) {
           return
         }
-        const responseHeasers = parseHeaders(request.getAllResponseHeaders())
+        const responseHeaders = parseHeaders(request.getAllResponseHeaders())
         const responseData =
           responseType && responseType !== 'text' ? request.response : request.responseText
         const response: AxiosResponse = {
           data: responseData,
           status: request.status,
           statusText: request.statusText,
-          headers: responseHeasers,
+          headers: responseHeaders,
           config,
           request
         }
@@ -109,7 +109,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
       }
 
       Object.keys(headers).forEach(name => {
-        if (data === null && name.toLocaleLowerCase() === 'content-type') {
+        if (data === null && name.toLowerCase() === 'content-type') {
           delete headers[name]
         } else {
           request.setRequestHeader(name, headers[name])
